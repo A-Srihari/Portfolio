@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div id="header">
+
+        <div class="container">
+            <nav>
+                <img src="images/srihari-logo.png" class="logo" alt="Logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+            </nav>
+
+            <div class="header-text">
+                <h1>
+                    Hello, I'm <br>
+                    <span>Srihari Achukatla</span><br>
+                    <!-- <h3>A Web Developer</h3> -->
+                </h1>
+                <p>A Web Developer</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!--^----------------------- About ------------------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="images/srihari-about.png" alt="">
+                </div>
+                <div class="about-col2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>
+                        A final-year Electronics and Communication Engineering student with a good foundation in Core
+                        Java,
+                        Spring Boot, MySQL, HTML, CSS, and JavaScript. <br>
+                        Passionate about building Web applications and continuously improving problem-solving skills.
+                        <br>
+                        Seeking an entry-level software development role in a software company to apply my knowledge and
+                        grow as a developer.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Language:</span><br>Java</li>
+                            <li><span>Frontend:</span><br>HTML, CSS, JavaScript, Bootstrap</li>
+                            <li><span>Backend & Database:</span><br>SpringBoot, MySQL</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Engineering</span><br>Siddharh Institure of Engineering & Technology (2022-2026)
+                                <br>CGPA: 9.18
+
+                            </li>
+                            <li><span>Intermediate</span><br>Sri Chaitanya Junior College - MPC (2020-2022) <br>
+                                Percentage: 94%</li>
+                            <li><span>Schooling</span><br> Vedavyasa Vidhya Niketan School (2007-2020) <br>Percentage:
+                                98%</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ^ ----------------------------- Projects -------------------------- -->
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="subtitle">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/contact-verse.png" alt="">
+                    <div class="layer">
+                        <h2>Contact Verse</h2>
+                        <p>A full-stack contact management app built with Spring Boot and frontend integration. Supports
+                            adding, organizing, and managing contacts with profile image storage via Cloudinary.</p>
+                        <a href="https://contactverse.onrender.com/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/short-url.png" alt="">
+                    <div class="layer">
+                        <h2>URL Shortener</h2>
+                        <p>A web application that converts long URLs into short, shareable links with unique key
+                            generation, redirection, and database storage.</p>
+                        <a href="https://shorturl-pdpi.onrender.com/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/textutils.png" alt="">
+                    <div class="layer">
+                        <h2>Text Utils</h2>
+                        <p>A text processing tool that allows users to format text (uppercase/lowercase), remove spaces,
+                            copy text, and view word/character count with reading time.</p>
+                        <a href="https://a-srihari.github.io/Text-Utils/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/todolist.png" alt="">
+                    <div class="layer">
+                        <h2>TO DO List</h2>
+                        <p>A simple task management app where users can add, edit, and delete tasks, helping organize
+                            daily activities with an intuitive interface.</p>
+                        <a href="https://srihari-todolist.netlify.app/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/weatherapp.png" alt="">
+                    <div class="layer">
+                        <h2>Weather App</h2>
+                        <p>A web application that fetches live weather data via API and displays temperature, humidity,
+                            and conditions in a clean and user-friendly way.</p>
+                        <a href="https://srihari-weather-app.netlify.app/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ^ ----------------------------- Contact ----------------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> srihariachukatla25@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 9014910994</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/srihari-achukatla-ab1384306/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/A-Srihari" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://x.com/srihari_018" target="_blank"><i
+                                class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="Srihari_Resume.pdf" download class="btn" target="_blank">Download my resume</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" class="text-input" placeholder="Your Name" required>
+                        <input type="email" name="Email" class="text-input" placeholder="Your Email" required>
+                        <textarea rows="6" name="Message" class="text-input" placeholder="Your Message"
+                            required></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                    <br>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName(" tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-links");
+            }
+
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-links");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz8HyZsuyurLSMCGBL6_8sTCqZkWa-tnMha2_1GkaoLQWaS2_HFqudUDM-McIPonAlV/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+
+
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully";
+                    setTimeout(function () {
+                        msg.innerHTML = "";
+                    }, 5000);
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
